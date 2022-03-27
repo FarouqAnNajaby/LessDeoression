@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tambah_artikel"
+    android:background="#1510F0">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Artikel"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/bg_putih_tambah_gejala"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_putih">
+
+        <Spinner
+            android:id="@+id/Spinner_depresi"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_below="@id/Spinner_depresi"
+            android:id="@+id/srl_data_artikel_pengguna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_data_artikel_pengguna"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_artikel"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_data_artikel_pengguna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.less_depression">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lessdepression"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Pengguna.Hasil_fix_depresi"></activity>
+        <activity android:name=".Pengguna.Hasil_cekDepresi" />
+        <activity android:name=".Pengguna.profil" />
+        <activity android:name=".Pengguna.detail_artikel" />
+        <activity android:name=".Pengguna.artikel" />
+        <activity android:name=".Pengguna.cekDepresi" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Pengguna.HomePengguna" />
+        <activity android:name=".Register2" />
+        <activity android:name=".Register" />
+        <activity android:name=".ubah_artikel" />
+        <activity android:name=".daftar_artikel_admin" />
+        <activity android:name=".tambah_artikel" />
+        <activity android:name=".Detailgejala" />
+        <activity android:name=".daftar_gejala" />
+        <activity android:name=".tambah_gejala" />
+        <activity android:name=".home_admin" />
+        <activity android:name=".login" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

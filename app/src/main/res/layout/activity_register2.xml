@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register2"
+    android:background="#1510F0">
+
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="less-depression"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Eitss , isi data diri"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="kamu ya..."
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:id="@+id/bg_putih"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:text="Daftar Akun"
+                android:textColor="@color/utama"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_gravity="center"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tvJkel"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Jenis Kelamin"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJkel"
+            android:layout_below="@id/tvJkel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/radio_laki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginRight="20dp"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="16sp"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/IV_image"
+            android:layout_below="@+id/radioGroupJkel"
+            android:layout_marginTop="40dp"
+            android:background="#C4C4C4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="35dp"/>
+
+        <Button
+            android:id="@+id/btn_Pilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Foto"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@+id/IV_image"
+            android:layout_below="@+id/radioGroupJkel"
+            android:layout_marginLeft="20dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/btn_daftar"
+            android:layout_below="@id/IV_image"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_daftar_akun">
+
+            <TextView
+                android:id="@+id/tv_register1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Daftar"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

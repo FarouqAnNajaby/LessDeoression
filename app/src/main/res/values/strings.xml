@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">less-depression</string>
+
+    <string-array name="depresi">
+        <item>Depresi Ringan</item>
+        <item>Depresi Sedang</item>
+        <item>Depresi Berat</item>
+    </string-array>
+
+</resources>

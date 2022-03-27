@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pengguna.HomePengguna">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="less-depression"
+        android:textStyle="bold"
+        android:textColor="#1510F0"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/judul"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Cari kebutuhanmu "
+        android:textColor="#1510F0"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/garis"
+        android:layout_below="@id/text1"
+        android:layout_width="120dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="20dp"
+        android:background="#90CAF9"/>
+
+    <!--    Tombol gejala -->
+
+    <RelativeLayout
+        android:id="@+id/btn_cek_depresi"
+        android:layout_below="@id/garis"
+        android:layout_marginTop="69dp"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_daftar_akun">
+        <RelativeLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_daftar_akun_putih">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icondua"/>
+
+            <TextView
+                android:id="@+id/tv_daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Deteksi Depresi"
+                android:textColor="#1510F0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--    Tombol Artikel -->
+
+    <RelativeLayout
+        android:id="@+id/btn_lihat_artikel"
+        android:layout_below="@id/btn_cek_depresi"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_daftar_akun">
+        <RelativeLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_daftar_akun_putih">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iconartikel"/>
+
+            <TextView
+                android:id="@+id/tv_artikel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Lihat Artikel"
+                android:textColor="#1510F0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--    Tombol Riwayat -->
+
+    <RelativeLayout
+        android:id="@+id/btnRiwayat"
+        android:layout_below="@id/btn_lihat_artikel"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_daftar_akun">
+        <RelativeLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_daftar_akun_putih">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="17dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/iconriwayat"/>
+
+            <TextView
+                android:id="@+id/tv_riwayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Riwayat Depresi"
+                android:textColor="#1510F0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_Profile"
+        android:layout_below="@id/btnRiwayat"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_daftar_akun">
+        <RelativeLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_daftar_akun_putih">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="17dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/iconriwayat"/>
+
+            <TextView
+                android:id="@+id/tv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Profil"
+                android:textColor="#1510F0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#1510F0"/>
+
+</RelativeLayout>

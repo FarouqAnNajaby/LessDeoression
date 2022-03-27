@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginEnd="20dp"
+    app:cardBackgroundColor="#79BAF2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/tempat_bobot">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/tv_depresi_ringan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depresi Ringan"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_depresi_sedang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depresi Sedang"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_depresi_berat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depresi Berat"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_kode_gejala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kode Gejala"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nama_gejala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Gejala"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tempat_bobot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_item_gejala"
+            android:layout_alignParentRight="true">
+
+
+            <TextView
+                android:id="@+id/bobot_gejala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bobot"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_bobot_gejala"
+                android:layout_below="@id/bobot_gejala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

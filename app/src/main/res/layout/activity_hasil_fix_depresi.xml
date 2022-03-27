@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pengguna.Hasil_fix_depresi"
+    android:background="#1510F0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/idatas">
+
+        <RelativeLayout
+            android:id="@+id/RL_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_hasil"
+                android:fontFamily="@font/poppins"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Kami mendeteksi bahwa ... mengalami gejala depresi ..."
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_toRightOf="@id/RL_text"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_rawRes="@raw/love"
+            android:layout_centerVertical="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/idatas"
+        android:id="@+id/bg_putih_tambah_gejala"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_putih">
+
+        <TextView
+            android:id="@+id/TV_rekomendasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Rekomendasi"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/TV_jawaban"
+            android:layout_below="@id/TV_rekomendasi"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="..."/>
+
+        <RelativeLayout
+            android:layout_below="@id/TV_jawaban"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button_oke"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_tambah">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:text="Oke"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

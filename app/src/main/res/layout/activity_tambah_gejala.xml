@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tambah_gejala"
+    android:background="#1510F0">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Tambah Gejala"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/bg_putih_tambah_gejala"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_putih">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/kode"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginRight="42dp">
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/et_kode_gejala"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kode Gejala"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="18sp"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nama_gejala"
+                    android:layout_below="@id/kode"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginRight="42dp">
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/et_nama_gejala"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Gejala"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="18sp"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bobot_gejala"
+                    android:layout_below="@id/nama_gejala"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginRight="42dp">
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/et_bobot_gejala"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Bobot Gejala"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/indikasi"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/bobot_gejala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indikasi Depresi"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"/>
+
+                <CheckBox
+                    android:id="@+id/cb_ringan"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/indikasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginLeft="35dp"
+                    android:text="Ringan"/>
+
+                <CheckBox
+                    android:id="@+id/cb_sedang"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/cb_ringan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginLeft="35dp"
+                    android:text="Sedang"/>
+
+                <CheckBox
+                    android:id="@+id/cb_berat"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/cb_sedang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginLeft="35dp"
+                    android:text="Berat"/>
+
+                <RelativeLayout
+                    android:id="@+id/button_add"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/cb_berat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_tambah">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:text="Tambah"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

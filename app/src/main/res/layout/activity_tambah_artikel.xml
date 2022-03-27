@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tambah_artikel"
+    android:background="#1510F0">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Tambah Artikel"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/bg_putih_tambah_gejala"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_putih">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:id="@+id/IV_image"
+                    android:layout_marginTop="40dp"
+                    android:background="#C4C4C4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="35dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/button_chose"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_toRightOf="@id/IV_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_tambah">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:text="Pilih"/>
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/kode_artikel"
+                    android:layout_below="@id/IV_image"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginRight="42dp">
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/et_kode_artikel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kode Artikel"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="18sp"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/judul_artikel"
+                    android:layout_below="@id/kode_artikel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginRight="42dp">
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/et_judul_artikel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Judul Artikel"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="18sp"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/isi_artikel"
+                    android:layout_below="@id/judul_artikel"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginRight="42dp">
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/et_isi_artikel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Isi Artikel"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/indikasi"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/isi_artikel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indikasi Depresi"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/RG_depresi"
+                    android:layout_below="@id/indikasi"
+                    android:layout_marginLeft="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/RB_Ringan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ringan"/>
+
+                    <RadioButton
+                        android:id="@+id/RB_Sedang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sedang"/>
+
+                    <RadioButton
+                        android:id="@+id/RB_Berat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berat"/>
+
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:id="@+id/button_add_artikel"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/RG_depresi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_tambah">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:text="Tambah"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
